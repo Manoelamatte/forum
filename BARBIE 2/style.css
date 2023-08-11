@@ -1,24 +1,120 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+
 * {
     margin:0;
     padding:0;
     box-sizing: 0;
 }
 
+main{
+    height: 100%;
+}
 :root{
     --rosa_claro: #FFD4EA;
     --rosa_forte: #EC4399;
     --branco: #fff;
+    --rosa_punk: #B4005C;
+}
+
+body{
+    height: 100vh;
+}
+
+.menulateral{
+    width: 0px;
+    height: 100vh;
+    background-color: var(--branco);
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+    z-index: 2;
 }
 
 
-.feed{
+.menulateral:hover {
+    width: 384px;
+}
+
+
+.hamburguerButton:hover +.menulateral{
+    width: 384px;
+} 
+/* {
     
+    width: 100%;
+    padding-left: 10px;
+} */
+.iconmenu{
+    height: 40px;
+    width: 65px;
+}
+
+.hamburguerButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menutitulo{
+    color: var(--rosa_punk);
+    font-family: 'Poppins, sans-serif';
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 41px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li.item-menu a{
+    color: var(--rosa_punk);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4px ;
+    display: flex;
+    margin-bottom: 20px ;
+    line-height: 40px;
+    gap: 11px;
+
+}
+
+ul li.item-menu{
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    margin-left: 39px;
+}
+
+ul li.item-menu a .linktexto{
+    margin-left: 40px;
+}
+
+.item-menu:hover{
+    background-color: var(--rosa_punk);
+
+
+}
+
+
+
+.feed{
     background-image: url("./assets/FundoB.png");
     grid-area: container;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
    
     /* background-color: var(--rosa_claro); */
     /* display: flex;
@@ -28,152 +124,211 @@
 
 }
 
+.imagemUsuario{
+    position: absolute;
+    left: 10px;
+    top: 4px;
+}
+
+.postboxTexto{
+    position: absolute;
+    color: var(--rosa_punk);
+    font-family:"Poppins, sans-serif";
+    font-weight: 500;
+    font-size: 14px;
+    left: 45px;
+    top:8.9px;
+
+}
+
+.bolinha{
+    position: absolute;
+    left: 94px;
+    top: 16px;
+}
+.enviado{
+    position:absolute;
+    left: 115px;
+    top: 11px;
+    font-weight: 500;
+    font-size: 10px;
+    font-family: "Poppins, sans-serif";
+    color: var(--rosa_claro);
+}
+
+.postboxHoras{
+    position: absolute;
+    left: 246px;
+    top: 11px;
+    font-family: "Poppins, sans-serif";
+    font-weight: 500;
+    font-size: 10px;
+    color: var(--rosa_claro);
+}
+
+.comentariosIcone{
+    position: absolute;
+    top: 99px;
+    width: 30px;
+    left: 5px;
+}
 header{
     grid-area: header;
-    flex-shrink: 0;
     background-color: var(--rosa_forte);
+    display: flex;
+    width: 100%;
 }
 
 .espacamento{
     gap: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.seila{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 175px;
 }
 
 .entrar{
-    width: 10.313rem;
-    height: 2.5rem;
+    width: 165px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     flex-shrink: 0;
     background: var(--rosa_claro);
-    color: var(--rosa_forte);
+    color: var(--rosa_punk);
     border-radius: 1.875rem;
     text-align: center;
-    font-family: Poppins;
-    font-size: 1.25rem;
+    font-family: "Poppins, sans-serif";
+    font-size: 20px;
     font-weight: 700;
     border: none;
+
+}
+
+.logo{
+    width: 106px;
+    height: 69px;
+
 }
 
 
 .pesquisar{
     align-items: center;
-    width: 30.625rem;
-    height: 1.5rem;
+    width: 490px;
     flex-shrink: 0;
     border-radius: 1.875rem;
     background: var(--branco);
     border: none;
-    padding-top: 0rem;
+    padding-top: 0.5rem ;
     padding-bottom: 0.5rem;
+    margin: 9px;
+    font-family: 'Poppins, sans-serif';
+    font-size: 14px;
+    font-weight: 500;
+    
 }
 
 input::placeholder{
-    color: var(--rosa_forte);
+    color: var(--rosa_claro);
+    padding: 9px 305px 5px 24px;
+}
+
+.inputItem{
+    position: relative;
+}
+.inputImagem{
+    position: absolute;
+    left: 20px;
+    /* width: 12px; */
+    top: 19.1px;
 }
 
 .postbox{
     background-color: var(--branco);
     border-radius: 0.938rem;
+    width: 732px;
     box-shadow: 0rem 0.25rem 0.25rem transparent;
+    width: 832px;
+    height: 134px;
+    position: relative;
 }
 
 .grid{
-    display: grid;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    /* display: flex;
     grid-template-rows: 10vh 35vh 50vh;
     grid-template-columns: 20vw 80vw;
     grid-template-areas: 'nav header' 
                          'nav container'
                          'nav container'
-    ;
+    ; */
 }
 
-.menu{
-    background-color: var(--branco);
-    grid-area: nav;
-    left: 0;
-    top: 0;
-    border: 0px none;
-    height: 1024px;
-    position: fixed;
-    width: 419px;
+
+
+#logomenu{
+    margin-top: 38px;
+    margin-left: -13px;
+    width: 379px;
+}
+
+.disque{
+    display: flex;
+    gap: 14px;
     
-}
-
-.logomenu{
-        padding: 40px;
-        border: 0px none;
-        height: 120px;
-        width: 382px;
-        left: 0;
-        object-fit: cover;
-        position: fixed;
-        top: 0;
-}
-
-.disquetexto{
-  border: none;
-  display: flex;
-    width: 109px;
-    height: 54px;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-shrink: 0;
+    /* superior | direita | inferior | esquerda */
+    padding: 214px 220px 756px 40px ;
 
 }
+
 
 .menuicones{
     width: 36px;
     height: 35px;
 }
 
-
-#BodyCss {
-    background-color: var(--branco);
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px #00000040;
-    height: 130px;
-    left: 5;
-    position:fixed;
-    top: 20%;
-    width: 832px;
-    padding: 1%;
-    
-
-  }
-  
-.imagemCss{
-    height: 30px ;
-    width: 42px;
-    position: fixed;
-    object-fit: cover;
-    position: fixed;
-}
-
-.imagemCss2{
-    height: 24px;
-    width: 24px;
-    left: 1;
+#maisBotao{
     position: absolute;
+    width: 72px;
+    height: 52px;
+    bottom: 20px;
+    right: 37px;
 }
 
-.label {
-    border: 0px none;
-    height: 54px;
-    width: 60px;
-  }
-  
+.linktxt{
+    color: var(--rosa_punk);
+    font-family: 'Poppins, sans-serif';
+    font-size: 16px;
+    font-weight: 400;
 
-
-.Paragrafo{
-    color: var(--rosa_forte);
-    font-family: "Poppins-Medium", Helvetica;
-    font-size: 14px;
-    font-weight: 300;
-    height: 10px;
-    left: 3;
-    letter-spacing: -0.5px;
-    line-height: 48px;
-    text-align: center;
-    top: 0;
-    white-space: nowrap;
-    width: 20px;
 }
+.item-menu:hover  .linktxt {
+    color: var(--branco);
+}
+
+.item-menu:hover .icones-menu-disque{
+    display: none;
+
+
+}
+
+.item-menu:hover .icones-menu-disque-hover{
+    display: block;
+
+
+}
+
+.icones-menu-disque-hover{
+    display: none;
+}
+
+
+
 
