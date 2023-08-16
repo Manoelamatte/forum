@@ -330,5 +330,94 @@ input::placeholder{
 }
 
 
+@media (max-width:1200px){
+    .pesquisar{   
+        width: 147px;
+        height: 20px;
+        margin: 0px;
+    }
+    .entrar{
+        width: 20%;
+        height: 30%;
+        font-size: 14px;
+    }
+    .inputImagem{
+        left: 8px;
+        top: 13.1px;
+    }
+    .logo{
+        width: 87px;
+        height: 56px;
 
+    }
+    .postbox{
+        width: 271px;
+        left: -2px;
+
+    }
+    .imagemUsuario{
+        left: 5px;
+        top: 5px;
+    }
+    .postboxTexto{
+        left: 32px;
+    }
+    .bolinha{
+        left: 80px;
+    }
+    .enviado{
+        left: 95px;
+    }
+    .postboxHoras{
+        left: 219px;
+    }
+    #maisBotao{
+        left: 85%;
+        top: 91%;
+        width: 56px;
+        height: 45px;
+    }
+    .seila{
+        margin-left: 0;
+    }
+    .espacamento{
+        gap: 0px;
+    }
+    .hamburguerButton:hover +.menulateral{
+        width: 181px;
+    }
+    .menulateral:hover{
+        width: 181px;
+    }
+    #logomenu{
+        width: 207px;
+    }
+    .linktxt{
+        font-size: 13px;
+    }
+    .item-menu:hover .icones-menu-disque{
+        width: 22px;
+    }
+    .item-menu:hover .icones-menu-disque-hover{
+        width: 22px;
+    
+    
+    }
+    .icones-menu-disque-hover{
+        width: 22px;
+    }
+    .icones-menu-disque{
+        width: 22px;
+    }
+    .menutitulo{
+        font-size: 14px;
+    }
+    ul li.item-menu a{
+        line-height: 29px;
+    }
+    .item-menu:hover{
+        line-height: 29px;
+    }
+
+}
 
