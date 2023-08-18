@@ -1,55 +1,44 @@
-import './style.css';
 import React from "react"
-import { ContainerLogin } from './styled';
+import { Botao, CardLogin, Direita, H1, H3, H4, Input, Paragrafo, Textfield} from './styled';
 import { ContainerGeral } from '../../StyledGlobal';
+import { Esquerda } from '../Cadastro/styled';
 // import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
 
 function Login(){
     return(
-        <>
-          {/* <header>
-
-</header>
-
-<main>
-    <div class="ContainerCadastro">
-        <div class="cardCadastro">
-            <div class="esquerda">
-                <h1>Bem-vindo  de volta! </h1>
-                <h3>Acesse a sua conta  agora mesmo</h3>
-            </div>
-
-            <div class="direita">
-            
-                <img src="LogoSpeakOut.png"/>
-
-
-                <h3>Login</h3>
-
-            <div class="textfield">
-                <input type="text" name="text" placeholder="E-mail"/>
-            </div>
-
-            <div class="textfield">
-                <input type="text" name="text" placeholder="Senha"/>
-            </div>
-
-            <button class="botao">Entrar</button>
-            <h4>Não tem uma conta? Cadastre-se já!</h4>
-            </div>
-        </div>
-    </div>
-</main>
-
-<footer>
-
-</footer>         */}
-
+        <>   
     <ContainerGeral>
-     <ContainerLogin>
+        <CardLogin>
+            <Esquerda>
+                <H1>
+                    Bem-Vindo
+                    de volta!
+                </H1>
 
+                <H3>
+                    Acesse a sua conta agora mesmo!
+                </H3>
+            </Esquerda>
 
-        </ContainerLogin>
+            <Direita>   
+                <H4>
+                    Login
+                </H4>
+
+            <Textfield>
+                <Input type="text" name="email" placeholder="Email"></Input>
+                <Input type="password" name="senha" placeholder="Senha"></Input>
+           </Textfield>
+
+                <Botao>
+                    Entrar
+                </Botao>
+
+                <Paragrafo>
+                    Não tem uma conta? 
+                </Paragrafo>
+            </Direita>
+        </CardLogin>
     </ContainerGeral>
         </>
     );

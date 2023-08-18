@@ -1,13 +1,12 @@
 import React from "react"
 import { ContainerGeral } from "../../StyledGlobal"
-import { CardCadastro, ContainerCadastro, Direita, Esquerda, H1, H3, Textfield, Input, Botao } from "./styled"
+import { CardCadastro,  Direita, Esquerda, H1, H3, Textfield, Input, Botao } from "./styled"
 
 
 function Cadastro(){
   return(
     <>
     <ContainerGeral>
-      <ContainerCadastro>
         <CardCadastro>
           <Esquerda>
             <H1>Oi, Barbie</H1>
@@ -26,7 +25,6 @@ function Cadastro(){
             </Textfield>
           </Direita>
         </CardCadastro>
-      </ContainerCadastro>
     </ContainerGeral>
     </>
   )
