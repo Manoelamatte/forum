@@ -1,11 +1,13 @@
 import './style.css';
 import React from "react"
+import { ContainerLogin } from './styled';
+import { ContainerGeral } from '../../StyledGlobal';
 // import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
 
 function Login(){
     return(
         <>
-          <header>
+          {/* <header>
 
 </header>
 
@@ -41,7 +43,14 @@ function Login(){
 
 <footer>
 
-</footer>        
+</footer>         */}
+
+    <ContainerGeral>
+     <ContainerLogin>
+
+
+        </ContainerLogin>
+    </ContainerGeral>
         </>
     );
 }

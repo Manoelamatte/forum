@@ -1,15 +1,14 @@
 import React from "react"
+import { ContainerGeral } from "../../StyledGlobal";
 import './style.css';
 
 
 function Cadastro() {
   return (
     <>
-    <header>
+    <ContainerGeral>
 
-</header>
 
-<main>
     <div class="ContainerCadastro">
         <div class="cardCadastro">
             <div class="esquerda">
@@ -44,11 +43,8 @@ function Cadastro() {
             </div>
         </div>
     </div>
-</main>
 
-<footer>
-
-</footer>
+</ContainerGeral>
      
     </>
   );

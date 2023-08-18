@@ -1,0 +1,97 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+
+:root{
+    --rosa_claro: #FFD4EA;
+    --rosa_forte: #EC4399;
+    --branco: #fff;
+}
+
+
+.feed{
+    
+    background-image: url("../assets/FundoB.png");
+    grid-area: container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    /* background-color: var(--rosa_claro); */
+    /* display: flex;
+    flex-direction: column;
+    /* width: 90rem;
+    height: 64rem; */
+
+}
+
+header{
+    background-color: #EC4399;
+    grid-area: header;
+    flex-shrink: 0;
+    background-color: var(--rosa_forte);
+}
+
+.entrar{
+    width: 10.313rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    background: var(--rosa_claro);
+    color: var(--rosa_forte);
+    border-radius: 1.875rem;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+}
+
+
+.pesquisar{
+    align-items: center;
+    width: 30.625rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 1.875rem;
+    background: var(--branco);
+    border: none;
+}
+
+input::placeholder{
+    color: var(--rosa_forte);
+}
+
+.postbox{
+    background-color: var(--branco);
+    border-radius: 0.938rem;
+    box-shadow: 0rem 0.25rem 0.25rem transparent;
+   
+   
+    background-color: aqua;
+    
+
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 10vh 35vh 50vh;
+    grid-template-columns: 20vw 80vw;
+    grid-template-areas: 'nav header' 
+                         'nav container'
+                         'nav container'
+    ;
+     
+
+}
+
+.menu{
+    background-color: red;
+    grid-area: nav;
+    left: 0;
+    top: 0;
+    position: absolute;
+    
+}
