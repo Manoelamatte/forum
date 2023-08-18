@@ -1,53 +1,35 @@
 import React from "react"
-import { ContainerGeral } from "../../StyledGlobal";
-import './style.css';
+import { ContainerGeral } from "../../StyledGlobal"
+import { CardCadastro, ContainerCadastro, Direita, Esquerda, H1, H3, Textfield, Input, Botao } from "./styled"
 
 
-function Cadastro() {
-  return (
+function Cadastro(){
+  return(
     <>
     <ContainerGeral>
-
-
-    <div class="ContainerCadastro">
-        <div class="cardCadastro">
-            <div class="esquerda">
-                <h1>Oi, Barbie</h1>
-                {/* <img src="BarbieSpeak.png"/> */}
-            </div>
-
-            <div class="direita">
+      <ContainerCadastro>
+        <CardCadastro>
+          <Esquerda>
+            <H1>Oi, Barbie</H1>
             
-                {/* <img src="LogoSpeakOut.png"> */}
+          </Esquerda>
 
+          <Direita>
+            <H3>Cadastre-se</H3>
+            <Textfield>
+              <Input type="text" name="nome" placeholder="Nome"></Input>
+              <Input type="tel" name="telefone" placeholder="Telefone"></Input>
+              <Input type="text" name="email" placeholder="Email"></Input>
+              <Input type="password" name="senha" placeholder="Senha"></Input>
 
-                <h3>Cadastre-se</h3>
-
-            <div class="textfield">
-                <input type="text" name="text" placeholder="Nome"/>
-            </div>
-
-            <div class="textfield">
-                <input type="text" name="text" placeholder="Telefone"/>
-            </div>
-
-            <div class="textfield">
-                <input type="text" name="email" placeholder="Email"/>
-            </div>
-
-            <div class="textfield">
-                <input type="password" name="senha" placeholder="Senha"/>
-            </div>
-
-            <button class="botao">Entrar</button>
-            </div>
-        </div>
-    </div>
-
-</ContainerGeral>
-     
+              <Botao>Entrar</Botao>
+            </Textfield>
+          </Direita>
+        </CardCadastro>
+      </ContainerCadastro>
+    </ContainerGeral>
     </>
-  );
+  )
 }
 
-export default Cadastro;
+export default Cadastro
