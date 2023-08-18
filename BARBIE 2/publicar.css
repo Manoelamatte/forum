@@ -1,0 +1,453 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+
+main{
+    height: 100%;
+}
+:root{
+    --rosa_claro: #FFD4EA;
+    --rosa_forte: #EC4399;
+    --branco: #fff;
+    --rosa_punk: #B4005C;
+}
+
+body{
+    height: 100vh;
+}
+
+.menulateral{
+    width: 0px;
+    height: 100vh;
+    background-color: var(--branco);
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+    z-index: 2;
+}
+
+
+.menulateral:hover {
+    width: 384px;
+}
+
+
+.hamburguerButton:hover +.menulateral{
+    width: 384px;
+} 
+/* {
+    
+    width: 100%;
+    padding-left: 10px;
+} */
+.iconmenu{
+    height: 40px;
+    width: 65px;
+}
+
+.hamburguerButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menutitulo{
+    color: var(--rosa_punk);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 41px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li.item-menu a{
+    color: var(--rosa_punk);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4px ;
+    display: flex;
+    margin-bottom: 20px ;
+    line-height: 40px;
+    gap: 11px;
+
+}
+
+ul li.item-menu{
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    margin-left: 39px;
+}
+
+ul li.item-menu a .linktexto{
+    margin-left: 40px;
+}
+
+.item-menu:hover{
+    background-color: var(--rosa_punk);
+
+
+}
+
+
+
+.feed{
+    background-image: url("./assets/FundoB.png");
+    grid-area: container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    /* background-color: var(--rosa_claro); */
+    /* display: flex;
+    flex-direction: column;
+    /* width: 90rem;
+    height: 64rem; */
+
+}
+
+.imagemUsuario{
+    position: absolute;
+    left: 9px!important;
+    top: 7px!important;
+}
+
+.postboxTexto{
+    color: var(--rosa_punk);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    left: 42px!important;
+    top: 9px;
+}
+
+.enviado{
+    position:absolute;
+    left: 115px;
+    top: 11px;
+    font-weight: 500;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    color: var(--rosa_claro);
+}
+
+header{
+    grid-area: header;
+    background-color: var(--rosa_forte);
+    display: flex;
+    width: 100%;
+}
+
+.espacamento{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.seila{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 175px;
+}
+
+.entrar{
+    width: 165px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    flex-shrink: 0;
+    background: var(--rosa_claro);
+    color: var(--rosa_punk);
+    border-radius: 1.875rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+
+}
+
+.logo{
+    width: 106px;
+    height: 69px;
+
+}
+
+
+.pesquisar{
+    align-items: center;
+    width: 490px;
+    flex-shrink: 0;
+    border-radius: 1.875rem;
+    background: var(--branco);
+    border: none;
+    padding-top: 0.5rem ;
+    padding-bottom: 0.5rem;
+    margin: 9px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+input::placeholder{
+    color: var(--rosa_claro);
+    padding: 9px 305px 5px 24px;
+}
+
+.inputItem{
+    position: relative;
+}
+.inputImagem{
+    position: absolute;
+    left: 20px;
+    /* width: 12px; */
+    top: 19.1px;
+}
+
+.postbox{
+    background-color: var(--branco);
+    border-radius: 0.938rem;
+    box-shadow: 0rem 0.25rem 0.25rem transparent;
+    height: 342px;
+    width: 620px!important;
+    position: relative;
+}
+
+/* .div-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+.grid{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    /* display: flex;
+    grid-template-rows: 10vh 35vh 50vh;
+    grid-template-columns: 20vw 80vw;
+    grid-template-areas: 'nav header' 
+                         'nav container'
+                         'nav container'
+    ; */
+}
+
+
+
+#logomenu{
+    margin-top: 38px;
+    margin-left: -13px;
+    width: 379px;
+}
+
+.disque{
+    display: flex;
+    gap: 14px;
+    
+    /* superior | direita | inferior | esquerda */
+    padding: 214px 220px 756px 40px ;
+
+}
+
+
+.menuicones{
+    width: 36px;
+    height: 35px;
+}
+
+#maisBotao{
+    position: absolute;
+    width: 72px;
+    height: 52px;
+    bottom: 20px;
+    right: 37px;
+}
+
+.linktxt{
+    color: var(--rosa_punk);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.item-menu:hover  .linktxt {
+    color: var(--branco);
+}
+
+.item-menu:hover .icones-menu-disque{
+    display: none;
+
+
+}
+
+.item-menu:hover .icones-menu-disque-hover{
+    display: block;
+
+
+}
+
+.icones-menu-disque-hover{
+    display: none;
+}
+
+.maisBotaoPost{
+    cursor: pointer;
+}
+
+.publicar{
+    position: relative;
+    left: 503px;
+    bottom: 140px;
+    height: 31px;
+    width: 108px;
+    background-color: var(--rosa_forte);
+    color: var(--branco);
+    border-radius: 1.875rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+#textoOqueEstaAcontecendo{
+    color: var(--rosa_punk);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 47px;
+}
+
+#EscrevaAquiArea{
+    background-color: var(--rosa_claro);
+    color: var(--rosa_punk);
+    resize: none;
+    width: 100%;
+    height: 130px;
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+.localDeEscrita{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media (max-width:1200px){
+    .pesquisar{   
+        width: 147px;
+        height: 20px;
+        margin: 0px;
+    }
+    .entrar{
+        width: 20%;
+        height: 30%;
+        font-size: 14px;
+    }
+    .inputImagem{
+        left: 8px;
+        top: 13.1px;
+    }
+    .logo{
+        width: 87px;
+        height: 56px;
+
+    }
+    .postbox{
+        width: 271px;
+        left: -2px;
+
+    }
+    .imagemUsuario{
+        left: 5px;
+        top: 5px;
+    }
+    .postboxTexto{
+        left: 32px;
+    }
+    .bolinha{
+        left: 80px;
+    }
+    .enviado{
+        left: 95px;
+    }
+    .postboxHoras{
+        left: 219px;
+    }
+    #maisBotao{
+        left: 85%;
+        top: 91%;
+        width: 56px;
+        height: 45px;
+    }
+    .seila{
+        margin-left: 0;
+    }
+    .espacamento{
+        gap: 0px;
+    }
+    .hamburguerButton:hover +.menulateral{
+        width: 181px;
+    }
+    .menulateral:hover{
+        width: 181px;
+    }
+    #logomenu{
+        width: 207px;
+    }
+    .linktxt{
+        font-size: 13px;
+    }
+    .item-menu:hover .icones-menu-disque{
+        width: 22px;
+    }
+    .item-menu:hover .icones-menu-disque-hover{
+        width: 22px;
+    
+    
+    }
+    .icones-menu-disque-hover{
+        width: 22px;
+    }
+    .icones-menu-disque{
+        width: 22px;
+    }
+    .menutitulo{
+        font-size: 14px;
+    }
+    ul li.item-menu a{
+        line-height: 29px;
+    }
+    .item-menu:hover{
+        line-height: 29px;
+    }
+
+}
+
